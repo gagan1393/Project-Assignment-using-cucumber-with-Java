@@ -101,12 +101,14 @@ pom.xml - These are the Libraries i am using for the Framework
 
 #How to use this framework?
 
-1. Clone the repository to your workspace. - use git clone 
+1. Clone the repository to your workspace.
 2. Open the command prompt and change the directory to workspace
-3. use this command - mvn verify
-4. It will start running the Tests
-5. After the Tests are over, the extent report will be available inside the test-output folder
-6. if anycase got failed, the screenshot will also be pasted inside the extent reports. (for demo purpose: i have delibrately failed 2 cases earlier. the reports are avialable inside the testout folder).
+3. Run this command - git clone https://github.com/gagan1393/Project-Assignment-using-cucumber-with-Java.git
+4. It will save it in your workspace directory
+5. Now from command prompt run this command - mvn verify
+6. It will start running the Tests
+7. After the Tests are over, the extent report will be available inside the test-output folder
+8. if anycase got failed, the screenshot will also be pasted inside the extent reports. (for demo purpose: i have delibrately failed 2 cases earlier. the reports are avialable inside the testout folder).
 
 
 
