@@ -5,18 +5,19 @@
 
 This is BDD framework using Selenium - Cucumber : Automation Testing Using Java
 
-BDD Framework created using Java Language using cucumber along with Maven build tool and for unit test, used JUnit framework and for reporting, i am using Extent Reports to publish the extent report in HTML and PDF format.
+BDD Framework created using cucumber with Selenium with Java Language. Using Maven build tool to maintain all the libraries in one place under pom.xml file. And for unit test, using JUnit framework and for reporting, i am using Extent Reports to publish the extent report in HTML and PDF format.
 
 #How the framework works?
 
 In the Framework, I have created Features files for writing all the features, available inside src/test/resources/AppFeature folder
 for Features file, I have used Gherkin Language
-  Background
-  Scenario
-  Given
-  When
-  Then
-  And
+  1. Feature
+  2. Background
+  3. Scenario
+  4. Given
+  5. When
+  6. Then
+  7. And
 
 Then i have created Steps Definition files, available under src/test/java/stepdefinitions package
 For Step definition, i have used junit framework.
@@ -27,12 +28,12 @@ Under this folder, I have created some utilities namely:
 2. com.qa.factory - Driver Factory:  Driver factory, where i am initializing the driver. In This method i have used to initialize the thread local driver on the basis of given browser. 
 3. com.qa.util - ConfigProperty - This method is used to load the properties from config.properties file, In properties file, i am calling the browser
 4. com.qa.util - Constants - This is final static constant file, where all the Path, timeouts and BaseURL is wriiten
-5. com.qa.util - ElementUtil - Here i have created the utilities for click, sendkeys, element tobe visible, select a value from dropdown and javascript excutor
+5. com.qa.util - ElementUtil - Here i have created the utilities for click, sendkeys, element tobe visible, selectavalue from dropdown and javascript excutor
 
 Then under src/test/java - 
 these are folder i have created
 1. ApplicationHooks - in this class, i am calling the driverfactoryclass and webdriver. Here i ahve given the Hooks also using @Before(order = ) and @After(order = )
-2. In the same class i have created a method for screenshot also, if any scenario failed, the failed scenario screenshot will be taken and paste it in the extent report
+2. In the same class i have created a method for screenshot also, if any scenario failed, the screenshot will be taken and paste it in the extent report
 3. StepDefinition - I have written the testcases for the feature file and verifying using Junit Assertion. I have created an object for page class and calling all the methods.
 4. TestRunner - Here i am calling the path of feature file and step definitions files. And from here we have to run the testcases.
 
@@ -45,7 +46,7 @@ Under src.test.resources -
 
 After running the Testcases, the extent report will be saved inside the test-output folder (PDF and HTML report)
 
-pom.xml - These are the Libraries i am using for the Framework
+pom.xml - These are the Libraries i am using for the Framework and TestRunner class
 
 	<dependency>
 			<groupId>io.cucumber</groupId>
